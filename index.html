@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>HTML5 Reversi</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <link rel="stylesheet" href="css/main.css">
+        <script src="js/jquery-1.10.2.min.js"></script>
+        
+        <script src="js/clientwebsocket.js"></script>
+        
+        <script src="js/ui/view.js"></script>
+        <script src="js/ui/nameinput.js"></script>
+        <script src="js/ui/gamelobby.js"></script>
+        <script src="js/ui/game.js"></script>
+        <script src="js/ui/board.js"></script>
+        <script src="js/ui/gamestatus.js"></script>
+        <script src="js/ui/ui.js"></script>
+    </head>
+    <body>
+        <div id='game_area'>
+            <div id='name_input'>
+                <div id='name_input_banner'>
+                    <div id='name_input_text'>
+                        <h2 id='name_input_html5' class='impact'>HTML5</h2>
+                        <h2 id='name_input_reversi' class='lobster'>Reversi</h2>
+                        <h2 id='no_connection' class='lobster'>Connecting...</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+        function init() {
+            this.ui = new UI();
+            var conn = new ClientWebSocket(ui);
+            this.ui.set_socket(conn);
+        }
+        window.addEventListener("load", init, false);</script>
+    </body>
+</html>

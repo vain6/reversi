@@ -1,0 +1,225 @@
+
+@font-face { font-family: Lobster; src: url('../fonts/Lobster/Lobster.otf'); }
+@font-face { font-family: Impact; src: url('../fonts/Impact/Impact.ttf'); }
+
+.lobster
+{
+	font-family: Lobster;
+    color: green;
+}
+
+.impact
+{
+	font-family: Impact;
+    color: black;
+}
+
+.border
+{
+    border: 1px solid black;
+}
+
+#no_connection
+{
+    font-size: 125%;
+}
+
+#name_input_banner
+{
+    margin: auto;
+    width: 25%;
+}
+
+#name_input_html5
+{
+    font-size: 400%;
+    margin: auto;
+}
+
+#name_input_reversi
+{
+    font-size: 500%;
+    margin: auto;
+    margin-top: -55px;
+    margin-left: 10px;
+}
+
+#name_input_form_field
+{
+    border: 2px solid black;
+    height: 25px;
+    width: 90%;
+}
+
+.button
+{
+    border: 2px solid black;
+    margin-top: 5px;
+    height: 25px;
+    width: 60px;
+}
+
+#game_lobby
+{
+    margin: auto;
+    width: 50%;
+}
+
+#game_lobby_box
+{
+    position: absolute;
+    width: 450px;
+    height: 150px;
+    border: 1px solid black;
+}
+
+#game_lobby_counter
+{
+    position: absolute;
+}
+
+#game_lobby_player_left
+{
+    position: absolute;
+    width: 33%;
+    height: 100%;
+}
+
+#game_lobby_player_left_text
+{
+    font-size: 200%;
+    margin-top: 35%;
+}
+
+#game_lobby_player_vs
+{
+    position: absolute;
+    font-size: 150%;
+    width: 33%;
+    height: 100%;
+    left: 33%;
+}
+
+#game_lobby_player_vs_text
+{
+    font-size: 100%;
+    margin-top: 40%;
+    margin-left: 40%;
+}
+
+#game_lobby_player_right
+{
+    position: absolute;
+    width: 33%;
+    left: 66%;
+}
+
+#game_lobby_player_right_text
+{
+    font-size: 200%;
+    margin-top: 35%;
+    float: right;
+}
+
+#game_area
+{
+    position:absolute;
+    height: 90%;
+    width: 90%;
+}
+
+#game
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+#board
+{
+    background: green;
+    position: absolute;
+    width: 500px;
+    height: 500px;
+    left: 0;
+}
+#board_image
+{
+    overflow: scroll;
+    z-index: 0;
+}
+
+.board_piece
+{
+    position: absolute;
+    z-index: 10;
+}
+
+#board_click_layer
+{
+    position: absolute;
+    z-index: 10;
+    width: 722px;
+    height: 722px;
+}
+
+#game_status
+{
+    position: absolute;
+    width: 300px;
+    height: 100%;
+    right: 100px;
+}
+#game_status_black
+{
+    height: 75px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: black;
+    color: white;
+    font-size: 200%;
+}
+#game_status_white
+{
+    height: 75px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: white;
+    color: black;
+    font-size: 200%
+}
+.game_status_highlight
+{
+    border: 8px solid green;
+}
+#game_status_black_score
+{
+    position: absolute;
+    right: 0;
+}
+#game_status_white_score
+{
+    position: absolute;
+    right: 0;
+}
+#game_status_text
+{
+    font-size: 200%
+}
+#game_status_timer
+{
+    font-size: 200%
+}
+
+#game_status_message
+{
+    height: 200px;
+    width: 100%;
+    margin-bottom: 5px;
+    background: lightgray;
+}
+#game_status_button
+{
+    height: 10%;
+    width: 100%;
+}
